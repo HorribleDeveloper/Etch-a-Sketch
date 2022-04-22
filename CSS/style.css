@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-square {
+    display: grid;
+    background-color: gray;
+    padding: 1em;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: 5ms;
+}
+
+.buttons {
+    padding: 10px;
+}
+
+.error {
+    display: none;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.grid-square:hover {
+    background-color: black;
+}
+
+#container {
+    display: grid;
+    /* z-index: 100; */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    min-height: 300px;
+    width: 60vw;
+    height: 60vw;
+    max-width: 600px;
+    max-height: 600px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Etch-a-Sketch</title>
+</head>
+
+<body>
+    <div class="section">
+        <div class="title">SketchPad</div>
+        <div class="buttons">
+            <button onclick="changeColor('black')" class="btn btn-primary">Black</button>
+            <button onclick="changeColor('grey')" class="btn btn-primary">Eraser</button>
+            <button onclick="changeColor('random')" class="btn btn-primary">Random</button>
+            <button onclick="reset()" class="btn btn-primary">Reset</button>
+        </div>
+        <div class="input">
+            <input type="text" value="" name="" id="drawingPadSize" onchange="changeSize(this.value)">
+            <button class="btn btn-primary">Set Size</button>
+        </div>
+        <div class="content">
+            <div id="container">
+
+            </div>
+        </div>
+        <div class="error">
+            Input must be between 2 and 100
+        </div>
+    </div>
+
+</body>
+<script src="JS/script.js"></script>
+
+</html>
